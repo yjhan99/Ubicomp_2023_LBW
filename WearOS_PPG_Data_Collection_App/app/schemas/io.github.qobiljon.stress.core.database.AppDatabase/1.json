@@ -1,0 +1,194 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "da539d1ec64c145260189eb9c5131d5d",
+    "entities": [
+      {
+        "tableName": "OffBody",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`timestamp` INTEGER NOT NULL, `is_off_body` INTEGER NOT NULL, PRIMARY KEY(`timestamp`))",
+        "fields": [
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "is_off_body",
+            "columnName": "is_off_body",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "timestamp"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "PPG",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`timestamp` INTEGER NOT NULL, `a` REAL, `b` REAL, `c` REAL, `d` REAL, `e` REAL, `f` REAL, `g` REAL, `h` REAL, `i` REAL, `j` REAL, `k` REAL, `l` REAL, `m` REAL, `n` REAL, `o` REAL, `p` REAL, PRIMARY KEY(`timestamp`))",
+        "fields": [
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "a",
+            "columnName": "a",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "b",
+            "columnName": "b",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "c",
+            "columnName": "c",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "d",
+            "columnName": "d",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "e",
+            "columnName": "e",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "f",
+            "columnName": "f",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "g",
+            "columnName": "g",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "h",
+            "columnName": "h",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "i",
+            "columnName": "i",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "j",
+            "columnName": "j",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "k",
+            "columnName": "k",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "l",
+            "columnName": "l",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "m",
+            "columnName": "m",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "n",
+            "columnName": "n",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "o",
+            "columnName": "o",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "p",
+            "columnName": "p",
+            "affinity": "REAL",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "timestamp"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Acc",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`timestamp` INTEGER NOT NULL, `x` REAL NOT NULL, `y` REAL NOT NULL, `z` REAL NOT NULL, PRIMARY KEY(`timestamp`))",
+        "fields": [
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "x",
+            "columnName": "x",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "y",
+            "columnName": "y",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "z",
+            "columnName": "z",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "timestamp"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'da539d1ec64c145260189eb9c5131d5d')"
+    ]
+  }
+}

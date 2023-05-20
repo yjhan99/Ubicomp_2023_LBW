@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">20.0.0.65</domain>
+        <domain includeSubdomains="true">118.217.7.46</domain>
+        <domain includeSubdomains="true">172.30.1.77</domain>
+        <domain includeSubdomains="true">easytrack.ddns.net</domain>
+    </domain-config>
+</network-security-config>
