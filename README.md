@@ -4,9 +4,13 @@
 
 The recent popularity of commercial wrist wearables has made it possible to study stress intervention systems in the wild, but there is a lack of pragmatic platforms for research prototyping and evaluation. We present an open-source toolkit for collecting raw photoplethysmography (PPG) data and modeling stress detection using Samsung Galaxy Watch, an off-the-shelf smartwatch. The feasibility of the toolkit for stress detection was validated against existing wearables such as Polar H10 and Empatica E4.
 
-WatchPPG consists of (1) a WearOS application on Samsung Galaxy Watch for collecting raw PPG data and (2) a real-time stress detection pipeline. Below figure illustrates our PPG-based stress detection pipeline.
+WatchPPG consists of 
+1. a WearOS application on Samsung Galaxy Watch for collecting raw PPG data
+2. a real-time stress detection pipeline. 
+  
+Below figure illustrates our PPG-based stress detection pipeline.
 
-![PPG-Based Stress Detection Pipeline](https://github.com/yjhan99/Ubicomp_2023_LBW/blob/main/image.jpg?raw=true)
+<img src="https://github.com/yjhan99/Ubicomp_2023_LBW/blob/main/pipeline.png?raw=true" width="450">
 
 ## More Information
 The pipeline takes a PPG signal and ouputs time and frequency domain heart rate variability (HRV) features commonly used in related researches:
