@@ -1,4 +1,4 @@
-# ISWC_2023_Briefs
+# Ubicomp/ISWC_2023_Late-Breaking-Work
 
 ## WatchPPG: An Open-Source Toolkit for PPG-based Stress Detection using Off-the-shelf Smartwatches
 
